@@ -1,6 +1,6 @@
 # Parameter-efficient Fine-Tuning of Transformer Encoder Foundation Model
 
-- base model: distilbert-bert-uncased (+ untrained classifier layer)
+- base model: distilbert-bert-uncased (+ classifier layer)
 - peft method: LoRA
 - downstream task: emotion classification
 - fine-tuning dataset: https://huggingface.co/datasets/dair-ai/emotion
@@ -46,3 +46,8 @@ python eval.py
 ## Evaluation results
 - foundation model: acc 0.144
 - fine-tuned model: acc 0.884
+
+<br>
+
+## ToDo
+- for better comparison, train classifyer layer of foundation model
